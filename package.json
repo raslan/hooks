@@ -1,0 +1,66 @@
+{
+  "name": "@refolded/hooks",
+  "repository": "@refolded/hooks",
+  "author": "refolded",
+  "version": "0.0.1",
+  "description": "A library of tasty reusable React hooks from the refolded team.",
+  "license": "MIT",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.module.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && microbundle --sourcemap false --jsx React.createElement",
+    "dev": "microbundle watch --sourcemap false --jsx React.createElement",
+    "prepublish": "yarn build",
+    "bundlewatch": "bundlewatch"
+  },
+  "types": "dist/index.d.ts",
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "./dist/index.cjs",
+        "maxSize": "1 kB"
+      },
+      {
+        "path": "./dist/index.modern.js",
+        "maxSize": "1.1 kB"
+      },
+      {
+        "path": "./dist/index.module.js",
+        "maxSize": "1 kB"
+      },
+      {
+        "path": "./dist/index.umd.js",
+        "maxSize": "1 kB"
+      }
+    ]
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "bundlewatch": "^0.3.3",
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "keywords": [
+    "react-hooks",
+    "hooks",
+    "react",
+    "utils"
+  ]
+}
