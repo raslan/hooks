@@ -2,7 +2,7 @@
   "name": "@refolded/hooks",
   "repository": "@refolded/hooks",
   "author": "refolded",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A library of tasty reusable React hooks from the refolded team.",
   "license": "MIT",
   "type": "module",
@@ -47,15 +47,13 @@
     ]
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": ">= 16.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "bundlewatch": "^0.3.3",
     "microbundle": "^0.15.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0"
   },
   "keywords": [
     "react-hooks",
