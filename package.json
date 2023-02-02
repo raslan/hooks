@@ -2,7 +2,7 @@
   "name": "@refolded/hooks",
   "repository": "@refolded/hooks",
   "author": "refolded",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A library of tasty reusable React hooks from the refolded team.",
   "license": "MIT",
   "type": "module",
@@ -30,19 +30,19 @@
     "files": [
       {
         "path": "./dist/index.cjs",
-        "maxSize": "1 kB"
+        "maxSize": "5 kB"
       },
       {
         "path": "./dist/index.modern.js",
-        "maxSize": "1.1 kB"
+        "maxSize": "5 kB"
       },
       {
         "path": "./dist/index.module.js",
-        "maxSize": "1 kB"
+        "maxSize": "5 kB"
       },
       {
         "path": "./dist/index.umd.js",
-        "maxSize": "1 kB"
+        "maxSize": "5 kB"
       }
     ]
   },
@@ -62,5 +62,8 @@
     "hooks",
     "react",
     "utils"
-  ]
+  ],
+  "dependencies": {
+    "@refolded/use-timing": "^2.2.2"
+  }
 }
