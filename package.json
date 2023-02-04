@@ -2,7 +2,7 @@
   "name": "@refolded/hooks",
   "repository": "@refolded/hooks",
   "author": "refolded",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A library of tasty reusable React hooks from the refolded team.",
   "license": "MIT",
   "type": "module",
