@@ -3,7 +3,7 @@ A set of reusable React hooks.
 
 ## Documentation
 
-[hooks.refolded.dev](https://hooks.refolded.dev)
+[hooks.raslan.dev](https://hooks.raslan.dev)
 
 ## Installation
 
